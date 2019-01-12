@@ -1,0 +1,40 @@
+plugins {
+  id 'org.springframework.boot' version '1.5.15.RELEASE' apply false
+  id 'java'
+  id 'eclipse'
+}
+
+apply plugin: 'maven'
+apply plugin: 'maven-publish'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+def buildVersion = "1.0"
+println "Build Version = ${buildVersion ?: '[none]'}"
+
+
+subprojects {
+    group = 'com.djt.cvpp.ota'
+    version = buildVersion
+
+    // Dependency Versioning
+    apply plugin: 'io.spring.dependency-management'
+    dependencyManagement {
+        imports {
+            mavenBom 'org.springframework.cloud:spring-cloud-dependencies:Edgware.RELEASE'
+            mavenBom 'io.pivotal.spring.cloud:spring-cloud-services-dependencies:1.5.0.RELEASE'
+            mavenBom 'org.springframework.boot:spring-boot-dependencies:1.5.15.RELEASE'
+        }
+        dependencies {
+            dependency 'io.springfox:springfox-swagger2:2.8.0'
+            dependency 'io.springfox:springfox-swagger-ui:2.8.0'
+            dependency 'org.flywaydb:flyway-core:4.2.0'
+            dependency 'com.microsoft.sqlserver:mssql-jdbc:6.2.2.jre8'
+            //dependency 'com.djt.cvpp.ota:fenix-flare-orfin-model:0.1-SNAPSHOT'
+        }
+    }
+}
+

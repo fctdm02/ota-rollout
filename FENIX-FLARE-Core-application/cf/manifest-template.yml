@@ -1,0 +1,9 @@
+---
+applications:
+- name: FENIX-FLARE-Core${appHostSuffix}
+  path: ${build.artifactPath}
+  buildpack: Javabuildpack40
+  memory: 1G
+  instances: ${appInstances}
+  env:
+    _JAVA_OPTIONS: -Dlogging.level.org.springframework.web=${logLevel} -Dlogging.level.org.springframework.ws.client.MessageTracing.sent=${logLevel} -Dlogging.level.org.springframework.ws.client.MessageTracing.received=${logLevel}

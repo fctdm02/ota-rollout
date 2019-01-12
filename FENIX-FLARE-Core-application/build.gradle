@@ -1,0 +1,55 @@
+
+plugins {
+	id 'java'
+	id 'maven-publish'
+	id 'eclipse'
+}
+
+apply plugin: 'org.springframework.boot'
+
+apply plugin: 'maven'
+apply plugin: 'maven-publish'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+	implementation project(':FENIX-FLARE-Core-api')
+	
+	//implementation 'com.djt.cvpp.ota:fenix-flare-orfin-model:0.1-SNAPSHOT'
+	implementation 'com.djt.cvpp.ota:ORFIN-Core-client:1.0'
+
+	//cloud native
+	implementation 'org.springframework.boot:spring-boot-starter-cloud-connectors'
+
+	//web
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-actuator'
+	implementation 'org.springframework.cloud:spring-cloud-starter-sleuth'
+	implementation 'io.springfox:springfox-swagger2'
+	implementation 'io.springfox:springfox-swagger-ui'
+
+	//security
+	implementation 'org.springframework.boot:spring-boot-starter-security'
+
+
+
+	//database
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.flywaydb:flyway-core'
+	implementation 'org.hibernate:hibernate-java8'
+	implementation 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310'
+	implementation 'com.h2database:h2'
+	implementation 'com.microsoft.sqlserver:mssql-jdbc'
+
+	//other
+	compileOnly 'org.projectlombok:lombok'
+
+	/*********** TEST ***********/
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+
+

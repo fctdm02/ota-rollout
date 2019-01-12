@@ -1,0 +1,18 @@
+pluginManagement {
+    repositories {
+      maven {
+        url 'maven-repo'
+      }
+      gradlePluginPortal()
+      ivy {
+        url 'ivy-repo'
+      }
+    }
+}
+
+rootProject.name = 'FENIX-FLARE-Core'
+
+include 'FENIX-FLARE-Core-api'
+include 'FENIX-FLARE-Core-application'
+include 'FENIX-FLARE-Core-client'
+

@@ -1,0 +1,779 @@
+{
+	"policySetName": "GLOBAL",
+	"policies": [{
+		"policyName": "Airbag_Status",
+		"policyDescription": "",
+		"policyValue": {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+			"value": ""
+		},
+		"allowRegionalChangeable": false,
+		"allowUserChangeable": false,
+		"allowServiceChangeable": false,
+		"allowCustomerFeedback": false,
+		"hmi": "",
+		"vehicleHmiFile": "",
+		"phone": "",
+		"otaFunction": "OTA_MANAGER",
+		"policyValueType": "STRING",
+		"policyValueConstraints": "NONE",
+		"policyOverrides": []
+	}, {
+		"policyName": "Automatic Periodic Trigger Days",
+		"policyDescription": "",
+		"policyValue": {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+			"value": "30"
+		},
+		"allowRegionalChangeable": false,
+		"allowUserChangeable": false,
+		"allowServiceChangeable": false,
+		"allowCustomerFeedback": false,
+		"hmi": "",
+		"vehicleHmiFile": "",
+		"phone": "",
+		"otaFunction": "IVSU_TRIGGER",
+		"policyValueType": "STRING",
+		"policyValueConstraints": "NONE",
+		"policyOverrides": []
+	}, {
+		"policyName": "Automatic Periodic Trigger Ignition Count",
+		"policyDescription": "",
+		"policyValue": {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+			"value": "265"
+		},
+		"allowRegionalChangeable": false,
+		"allowUserChangeable": false,
+		"allowServiceChangeable": false,
+		"allowCustomerFeedback": false,
+		"hmi": "",
+		"vehicleHmiFile": "",
+		"phone": "",
+		"otaFunction": "IVSU_TRIGGER",
+		"policyValueType": "STRING",
+		"policyValueConstraints": "NONE",
+		"policyOverrides": []
+	}, {
+		"policyName": "Automatic Periodic Trigger Mileage",
+		"policyDescription": "",
+		"policyValue": {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+			"value": "10000"
+		},
+		"allowRegionalChangeable": false,
+		"allowUserChangeable": false,
+		"allowServiceChangeable": false,
+		"allowCustomerFeedback": false,
+		"hmi": "",
+		"vehicleHmiFile": "",
+		"phone": "",
+		"otaFunction": "IVSU_TRIGGER",
+		"policyValueType": "STRING",
+		"policyValueConstraints": "NONE",
+		"policyOverrides": []
+	}, {
+		"policyName": "Automatic PeriodicTrigger Authorization Level",
+		"policyDescription": "",
+		"policyValue": {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+			"value": "Level2Authorization"
+		},
+		"allowRegionalChangeable": false,
+		"allowUserChangeable": false,
+		"allowServiceChangeable": false,
+		"allowCustomerFeedback": false,
+		"hmi": "",
+		"vehicleHmiFile": "",
+		"phone": "",
+		"otaFunction": "IVSU_TRIGGER",
+		"policyValueType": "STRING",
+		"policyValueConstraints": "NONE",
+		"policyOverrides": []
+	}, {
+		"policyName": "Battery SOC",
+		"policyDescription": "The minimum value required on SOC prior to any action in ignition off",
+		"policyValue": {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+			"value": "65%"
+		},
+		"allowRegionalChangeable": false,
+		"allowUserChangeable": false,
+		"allowServiceChangeable": false,
+		"allowCustomerFeedback": false,
+		"hmi": "None",
+		"vehicleHmiFile": "NONE",
+		"phone": "None",
+		"otaFunction": "OTA_MANAGER",
+		"policyValueType": "STRING",
+		"policyValueConstraints": "NONE",
+		"policyOverrides": []
+	}, {
+		"policyName": "ConnectionPriority",
+		"policyDescription": "Array of the connection priority. Top is the highest priority",
+		"policyValue": {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+			"value": "Cellular"
+		},
+		"allowRegionalChangeable": false,
+		"allowUserChangeable": false,
+		"allowServiceChangeable": false,
+		"allowCustomerFeedback": false,
+		"hmi": "",
+		"vehicleHmiFile": "",
+		"phone": "",
+		"otaFunction": "OTA_MANAGER_HMI",
+		"policyValueType": "ENUM",
+		"policyValueConstraints": "Wi-Fi_Cellular_AppLink",
+		"policyOverrides": []
+	}, {
+		"policyName": "DCTHNR_Frequency",
+		"policyDescription": "DefaultConTypeHMINotice_Retry frequency",
+		"policyValue": {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+			"value": "48 hrs"
+		},
+		"allowRegionalChangeable": false,
+		"allowUserChangeable": false,
+		"allowServiceChangeable": false,
+		"allowCustomerFeedback": false,
+		"hmi": "",
+		"vehicleHmiFile": "",
+		"phone": "",
+		"otaFunction": "OTA_MANAGER",
+		"policyValueType": "STRING",
+		"policyValueConstraints": "NONE",
+		"policyOverrides": []
+	}, {
+		"policyName": "DWPreferedTime",
+		"policyDescription": "The prefered time to download from the cloud",
+		"policyValue": {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+			"value": "2 - 4 AM"
+		},
+		"allowRegionalChangeable": false,
+		"allowUserChangeable": false,
+		"allowServiceChangeable": false,
+		"allowCustomerFeedback": false,
+		"hmi": "",
+		"vehicleHmiFile": "",
+		"phone": "",
+		"otaFunction": "DOWNLOAD_MANAGER",
+		"policyValueType": "STRING",
+		"policyValueConstraints": "NONE",
+		"policyOverrides": []
+	}, {
+		"policyName": "DataConsumptionMaxSize",
+		"policyDescription": "",
+		"policyValue": {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+			"value": "50 MB"
+		},
+		"allowRegionalChangeable": false,
+		"allowUserChangeable": false,
+		"allowServiceChangeable": false,
+		"allowCustomerFeedback": false,
+		"hmi": "",
+		"vehicleHmiFile": "",
+		"phone": "",
+		"otaFunction": "OTA_MANAGER",
+		"policyValueType": "STRING",
+		"policyValueConstraints": "NONE",
+		"policyOverrides": []
+	}, {
+		"policyName": "DataConsumptionPeriod",
+		"policyDescription": "",
+		"policyValue": {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+			"value": "ConnectionCycle"
+		},
+		"allowRegionalChangeable": false,
+		"allowUserChangeable": false,
+		"allowServiceChangeable": false,
+		"allowCustomerFeedback": false,
+		"hmi": "",
+		"vehicleHmiFile": "",
+		"phone": "",
+		"otaFunction": "OTA_MANAGER",
+		"policyValueType": "STRING",
+		"policyValueConstraints": "NONE",
+		"policyOverrides": []
+	}, {
+		"policyName": "DefaultConTypeHMINotice_Retry",
+		"policyDescription": "How many times to display a request for connection to the customer prior to switching connection",
+		"policyValue": {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+			"value": "3"
+		},
+		"allowRegionalChangeable": false,
+		"allowUserChangeable": false,
+		"allowServiceChangeable": false,
+		"allowCustomerFeedback": false,
+		"hmi": "",
+		"vehicleHmiFile": "",
+		"phone": "",
+		"otaFunction": "OTA_MANAGER_HMI",
+		"policyValueType": "STRING",
+		"policyValueConstraints": "NONE",
+		"policyOverrides": []
+	}, {
+		"policyName": "DefaultConTypeWaitTime",
+		"policyDescription": "Time the vehilce will wait for a connection to be established prior to requesting a customer feedback",
+		"policyValue": {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+			"value": "48 hrs"
+		},
+		"allowRegionalChangeable": false,
+		"allowUserChangeable": false,
+		"allowServiceChangeable": false,
+		"allowCustomerFeedback": true,
+		"hmi": "None",
+		"vehicleHmiFile": "\"\"\"5\"\"\"",
+		"phone": "None",
+		"otaFunction": "OTA_MANAGER_HMI",
+		"policyValueType": "STRING",
+		"policyValueConstraints": "NONE",
+		"policyOverrides": []
+	}, {
+		"policyName": "DefaultScheduledSetting",
+		"policyDescription": "To display in the HMI a default time that will be used for each update",
+		"policyValue": {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+			"value": "ALLOW"
+		},
+		"allowRegionalChangeable": true,
+		"allowUserChangeable": true,
+		"allowServiceChangeable": false,
+		"allowCustomerFeedback": false,
+		"hmi": "Read",
+		"vehicleHmiFile": "",
+		"phone": "None",
+		"otaFunction": "OTA_MANAGER_HMI",
+		"policyValueType": "STRING",
+		"policyValueConstraints": "NONE",
+		"policyOverrides": []
+	}, {
+		"policyName": "E_CALL",
+		"policyDescription": "",
+		"policyValue": {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+			"value": ""
+		},
+		"allowRegionalChangeable": false,
+		"allowUserChangeable": false,
+		"allowServiceChangeable": false,
+		"allowCustomerFeedback": false,
+		"hmi": "",
+		"vehicleHmiFile": "",
+		"phone": "",
+		"otaFunction": "OTA_MANAGER",
+		"policyValueType": "STRING",
+		"policyValueConstraints": "NONE",
+		"policyOverrides": []
+	}, {
+		"policyName": "Event Based Trigger Authorization Level",
+		"policyDescription": "",
+		"policyValue": {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+			"value": "Level2Authorization"
+		},
+		"allowRegionalChangeable": false,
+		"allowUserChangeable": false,
+		"allowServiceChangeable": false,
+		"allowCustomerFeedback": false,
+		"hmi": "",
+		"vehicleHmiFile": "",
+		"phone": "",
+		"otaFunction": "IVSU_TRIGGER",
+		"policyValueType": "STRING",
+		"policyValueConstraints": "NONE",
+		"policyOverrides": []
+	}, {
+		"policyName": "HTTPS Client timeout ",
+		"policyDescription": "",
+		"policyValue": {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+			"value": "120 sec"
+		},
+		"allowRegionalChangeable": false,
+		"allowUserChangeable": false,
+		"allowServiceChangeable": false,
+		"allowCustomerFeedback": false,
+		"hmi": "",
+		"vehicleHmiFile": "",
+		"phone": "",
+		"otaFunction": "DOWNLOAD_MANAGER",
+		"policyValueType": "STRING",
+		"policyValueConstraints": "NONE",
+		"policyOverrides": []
+	}, {
+		"policyName": "Level1Authorization",
+		"policyDescription": "Safety and security updates. No additional consent provided by customer",
+		"policyValue": {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+			"value": "RegionCountryFile"
+		},
+		"allowRegionalChangeable": true,
+		"allowUserChangeable": true,
+		"allowServiceChangeable": true,
+		"allowCustomerFeedback": false,
+		"hmi": "Read/Write",
+		"vehicleHmiFile": "",
+		"phone": "None",
+		"otaFunction": "OTA_MANAGER",
+		"policyValueType": "STRING",
+		"policyValueConstraints": "NONE",
+		"policyOverrides": []
+	}, {
+		"policyName": "Level2Authorization",
+		"policyDescription": "This includes all improvements to any component",
+		"policyValue": {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+			"value": "RegionCountryFile"
+		},
+		"allowRegionalChangeable": true,
+		"allowUserChangeable": true,
+		"allowServiceChangeable": true,
+		"allowCustomerFeedback": false,
+		"hmi": "Read/Write",
+		"vehicleHmiFile": "",
+		"phone": "None",
+		"otaFunction": "OTA_MANAGER",
+		"policyValueType": "STRING",
+		"policyValueConstraints": "NONE",
+		"policyOverrides": []
+	}, {
+		"policyName": "Level3Authorization",
+		"policyDescription": "We require PII information for the update",
+		"policyValue": {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+			"value": "RegionCountryFile"
+		},
+		"allowRegionalChangeable": true,
+		"allowUserChangeable": true,
+		"allowServiceChangeable": true,
+		"allowCustomerFeedback": false,
+		"hmi": "Read/Write",
+		"vehicleHmiFile": "",
+		"phone": "None",
+		"otaFunction": "OTA_MANAGER",
+		"policyValueType": "STRING",
+		"policyValueConstraints": "NONE",
+		"policyOverrides": []
+	}, {
+		"policyName": "Level4Authorization",
+		"policyDescription": "Digital Jukebox Technologies. LLC. push of software independent of customer authorization",
+		"policyValue": {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+			"value": "RegionCountryFile"
+		},
+		"allowRegionalChangeable": true,
+		"allowUserChangeable": false,
+		"allowServiceChangeable": false,
+		"allowCustomerFeedback": false,
+		"hmi": "None",
+		"vehicleHmiFile": "",
+		"phone": "None",
+		"otaFunction": "OTA_MANAGER",
+		"policyValueType": "STRING",
+		"policyValueConstraints": "NONE",
+		"policyOverrides": []
+	}, {
+		"policyName": "Map Update Authorization Level",
+		"policyDescription": "",
+		"policyValue": {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+			"value": "Level3Authorization"
+		},
+		"allowRegionalChangeable": false,
+		"allowUserChangeable": false,
+		"allowServiceChangeable": false,
+		"allowCustomerFeedback": false,
+		"hmi": "",
+		"vehicleHmiFile": "",
+		"phone": "",
+		"otaFunction": "IVSU_TRIGGER",
+		"policyValueType": "STRING",
+		"policyValueConstraints": "NONE",
+		"policyOverrides": []
+	}, {
+		"policyName": "Master_RESET",
+		"policyDescription": "",
+		"policyValue": {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+			"value": ""
+		},
+		"allowRegionalChangeable": false,
+		"allowUserChangeable": false,
+		"allowServiceChangeable": false,
+		"allowCustomerFeedback": false,
+		"hmi": "",
+		"vehicleHmiFile": "",
+		"phone": "",
+		"otaFunction": "OTA_MANAGER",
+		"policyValueType": "STRING",
+		"policyValueConstraints": "NONE",
+		"policyOverrides": []
+	}, {
+		"policyName": "Max Status Chunk Queue Cache Size",
+		"policyDescription": "Default Size limit for upload pending status queue",
+		"policyValue": {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+			"value": "5Mb"
+		},
+		"allowRegionalChangeable": false,
+		"allowUserChangeable": false,
+		"allowServiceChangeable": true,
+		"allowCustomerFeedback": false,
+		"hmi": "None",
+		"vehicleHmiFile": "NONE",
+		"phone": "None",
+		"otaFunction": "OTA_STATUS_MANAGER",
+		"policyValueType": "STRING",
+		"policyValueConstraints": "NONE",
+		"policyOverrides": []
+	}, {
+		"policyName": "Max Status Chunk Queue number",
+		"policyDescription": "Default number limit for chunks per campaign in upload pending status queue",
+		"policyValue": {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+			"value": "10"
+		},
+		"allowRegionalChangeable": false,
+		"allowUserChangeable": false,
+		"allowServiceChangeable": true,
+		"allowCustomerFeedback": false,
+		"hmi": "None",
+		"vehicleHmiFile": "NONE",
+		"phone": "None",
+		"otaFunction": "OTA_STATUS_MANAGER",
+		"policyValueType": "STRING",
+		"policyValueConstraints": "NONE",
+		"policyOverrides": []
+	}, {
+		"policyName": "MaxECUsPerSWCampaign",
+		"policyDescription": "",
+		"policyValue": {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+			"value": "8"
+		},
+		"allowRegionalChangeable": false,
+		"allowUserChangeable": false,
+		"allowServiceChangeable": false,
+		"allowCustomerFeedback": false,
+		"hmi": "",
+		"vehicleHmiFile": "",
+		"phone": "",
+		"otaFunction": "OTA_MANAGER",
+		"policyValueType": "STRING",
+		"policyValueConstraints": "NONE",
+		"policyOverrides": []
+	}, {
+		"policyName": "MaxNumConcurrentSWCampaign",
+		"policyDescription": "",
+		"policyValue": {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+			"value": "3"
+		},
+		"allowRegionalChangeable": false,
+		"allowUserChangeable": false,
+		"allowServiceChangeable": false,
+		"allowCustomerFeedback": false,
+		"hmi": "",
+		"vehicleHmiFile": "",
+		"phone": "",
+		"otaFunction": "OTA_MANAGER",
+		"policyValueType": "STRING",
+		"policyValueConstraints": "NONE",
+		"policyOverrides": []
+	}, {
+		"policyName": "NavLocalUpdateTriggerPeriod",
+		"policyDescription": "",
+		"policyValue": {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+			"value": "48 hrs"
+		},
+		"allowRegionalChangeable": false,
+		"allowUserChangeable": false,
+		"allowServiceChangeable": false,
+		"allowCustomerFeedback": false,
+		"hmi": "",
+		"vehicleHmiFile": "",
+		"phone": "",
+		"otaFunction": "OTA_MANAGER",
+		"policyValueType": "STRING",
+		"policyValueConstraints": "NONE",
+		"policyOverrides": []
+	}, {
+		"policyName": "NotificationStatus",
+		"policyDescription": "The notification will be in the vehicle and any other system that customer has subscribed thru the Owner Webesite",
+		"policyValue": {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+			"value": "YES"
+		},
+		"allowRegionalChangeable": false,
+		"allowUserChangeable": false,
+		"allowServiceChangeable": false,
+		"allowCustomerFeedback": false,
+		"hmi": "Read/Write",
+		"vehicleHmiFile": "",
+		"phone": "Read",
+		"otaFunction": "OTA_MANAGER_HMI",
+		"policyValueType": "STRING",
+		"policyValueConstraints": "NONE",
+		"policyOverrides": []
+	}, {
+		"policyName": "OneTimeAuthorization",
+		"policyDescription": "For a One Time Consent. Display HMI notificaiton that an update is available. This applies to Level2Authorization updates",
+		"policyValue": {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+			"value": "RegionCountryFile"
+		},
+		"allowRegionalChangeable": true,
+		"allowUserChangeable": true,
+		"allowServiceChangeable": true,
+		"allowCustomerFeedback": true,
+		"hmi": "Read/Write",
+		"vehicleHmiFile": "\"\"\"4\"\"\"",
+		"phone": "Read",
+		"otaFunction": "OTA_MANAGER",
+		"policyValueType": "STRING",
+		"policyValueConstraints": "NONE",
+		"policyOverrides": []
+	}, {
+		"policyName": "Policy Update On Update Check",
+		"policyDescription": "Used to check for policy update at time of VIL update check.",
+		"policyValue": {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+			"value": "YES"
+		},
+		"allowRegionalChangeable": false,
+		"allowUserChangeable": false,
+		"allowServiceChangeable": false,
+		"allowCustomerFeedback": false,
+		"hmi": "",
+		"vehicleHmiFile": "",
+		"phone": "",
+		"otaFunction": "IVSU_TRIGGER",
+		"policyValueType": "STRING",
+		"policyValueConstraints": "NONE",
+		"policyOverrides": []
+	}, {
+		"policyName": "Policy Update On X Days",
+		"policyDescription": "",
+		"policyValue": {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+			"value": ""
+		},
+		"allowRegionalChangeable": false,
+		"allowUserChangeable": false,
+		"allowServiceChangeable": false,
+		"allowCustomerFeedback": false,
+		"hmi": "",
+		"vehicleHmiFile": "",
+		"phone": "",
+		"otaFunction": "VEHICLE_OTA_POLICY",
+		"policyValueType": "STRING",
+		"policyValueConstraints": "NONE",
+		"policyOverrides": []
+	}, {
+		"policyName": "Policy Update On X Ignition",
+		"policyDescription": "",
+		"policyValue": {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+			"value": ""
+		},
+		"allowRegionalChangeable": false,
+		"allowUserChangeable": false,
+		"allowServiceChangeable": false,
+		"allowCustomerFeedback": false,
+		"hmi": "",
+		"vehicleHmiFile": "",
+		"phone": "",
+		"otaFunction": "VEHICLE_OTA_POLICY",
+		"policyValueType": "STRING",
+		"policyValueConstraints": "NONE",
+		"policyOverrides": []
+	}, {
+		"policyName": "Policy Update On X Mileage",
+		"policyDescription": "",
+		"policyValue": {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+			"value": ""
+		},
+		"allowRegionalChangeable": false,
+		"allowUserChangeable": false,
+		"allowServiceChangeable": false,
+		"allowCustomerFeedback": false,
+		"hmi": "",
+		"vehicleHmiFile": "",
+		"phone": "",
+		"otaFunction": "VEHICLE_OTA_POLICY",
+		"policyValueType": "STRING",
+		"policyValueConstraints": "NONE",
+		"policyOverrides": []
+	}, {
+		"policyName": "Power_Mode",
+		"policyDescription": "",
+		"policyValue": {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+			"value": ""
+		},
+		"allowRegionalChangeable": false,
+		"allowUserChangeable": false,
+		"allowServiceChangeable": false,
+		"allowCustomerFeedback": false,
+		"hmi": "",
+		"vehicleHmiFile": "",
+		"phone": "",
+		"otaFunction": "OTA_MANAGER",
+		"policyValueType": "STRING",
+		"policyValueConstraints": "NONE",
+		"policyOverrides": []
+	}, {
+		"policyName": "PreActivationNotifaction",
+		"policyDescription": "A reminder for the sw update that will get activated at the chosen time",
+		"policyValue": {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+			"value": "DISPLAY"
+		},
+		"allowRegionalChangeable": false,
+		"allowUserChangeable": true,
+		"allowServiceChangeable": false,
+		"allowCustomerFeedback": false,
+		"hmi": "Read",
+		"vehicleHmiFile": "",
+		"phone": "Read",
+		"otaFunction": "OTA_MANAGER_HMI",
+		"policyValueType": "STRING",
+		"policyValueConstraints": "NONE",
+		"policyOverrides": []
+	}, {
+		"policyName": "SOC",
+		"policyDescription": "",
+		"policyValue": {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+			"value": ""
+		},
+		"allowRegionalChangeable": false,
+		"allowUserChangeable": false,
+		"allowServiceChangeable": false,
+		"allowCustomerFeedback": false,
+		"hmi": "",
+		"vehicleHmiFile": "",
+		"phone": "",
+		"otaFunction": "OTA_MANAGER",
+		"policyValueType": "STRING",
+		"policyValueConstraints": "NONE",
+		"policyOverrides": []
+	}, {
+		"policyName": "ScheduleTimeRange",
+		"policyDescription": "the range for the software update scheduler",
+		"policyValue": {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+			"value": "24 hrs"
+		},
+		"allowRegionalChangeable": false,
+		"allowUserChangeable": false,
+		"allowServiceChangeable": false,
+		"allowCustomerFeedback": false,
+		"hmi": "Read",
+		"vehicleHmiFile": "",
+		"phone": "None",
+		"otaFunction": "OTA_MANAGER_HMI",
+		"policyValueType": "STRING",
+		"policyValueConstraints": "NONE",
+		"policyOverrides": []
+	}, {
+		"policyName": "Status Chunk Max Size",
+		"policyDescription": "Default IVSU status chunk size for each campaign",
+		"policyValue": {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+			"value": "80K"
+		},
+		"allowRegionalChangeable": false,
+		"allowUserChangeable": false,
+		"allowServiceChangeable": true,
+		"allowCustomerFeedback": false,
+		"hmi": "None",
+		"vehicleHmiFile": "NONE",
+		"phone": "None",
+		"otaFunction": "OTA_STATUS_MANAGER",
+		"policyValueType": "STRING",
+		"policyValueConstraints": "NONE",
+		"policyOverrides": []
+	}, {
+		"policyName": "Status Upload Medium whitelist",
+		"policyDescription": "Default whitelist medium for status to be upload to cloud",
+		"policyValue": {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+			"value": "Wi-Fi Cellular"
+		},
+		"allowRegionalChangeable": false,
+		"allowUserChangeable": false,
+		"allowServiceChangeable": true,
+		"allowCustomerFeedback": false,
+		"hmi": "None",
+		"vehicleHmiFile": "NONE",
+		"phone": "None",
+		"otaFunction": "OTA_STATUS_MANAGER",
+		"policyValueType": "STRING",
+		"policyValueConstraints": "NONE",
+		"policyOverrides": []
+	}, {
+		"policyName": "Status chunk cache Max Size",
+		"policyDescription": "Default IVSU status chunk overall size limit",
+		"policyValue": {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+			"value": "640K"
+		},
+		"allowRegionalChangeable": false,
+		"allowUserChangeable": false,
+		"allowServiceChangeable": true,
+		"allowCustomerFeedback": false,
+		"hmi": "None",
+		"vehicleHmiFile": "NONE",
+		"phone": "None",
+		"otaFunction": "OTA_STATUS_MANAGER",
+		"policyValueType": "STRING",
+		"policyValueConstraints": "NONE",
+		"policyOverrides": []
+	}, {
+		"policyName": "Status upload frequency",
+		"policyDescription": "Default IVSU status chunk upload frequency",
+		"policyValue": {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+			"value": "24hr"
+		},
+		"allowRegionalChangeable": false,
+		"allowUserChangeable": false,
+		"allowServiceChangeable": true,
+		"allowCustomerFeedback": false,
+		"hmi": "None",
+		"vehicleHmiFile": "NONE",
+		"phone": "None",
+		"otaFunction": "OTA_STATUS_MANAGER",
+		"policyValueType": "STRING",
+		"policyValueConstraints": "NONE",
+		"policyOverrides": []
+	}, {
+		"policyName": "load_shed ",
+		"policyDescription": "",
+		"policyValue": {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+			"value": ""
+		},
+		"allowRegionalChangeable": false,
+		"allowUserChangeable": false,
+		"allowServiceChangeable": false,
+		"allowCustomerFeedback": false,
+		"hmi": "",
+		"vehicleHmiFile": "",
+		"phone": "",
+		"otaFunction": "OTA_MANAGER",
+		"policyValueType": "STRING",
+		"policyValueConstraints": "NONE",
+		"policyOverrides": []
+	}],
+	"programModelYears": []
+}

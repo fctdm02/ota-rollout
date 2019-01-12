@@ -1,0 +1,32 @@
+
+plugins {
+	id 'java'
+	id 'eclipse'
+}
+
+apply plugin: 'maven'
+apply plugin: 'maven-publish'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+
+	//implementation 'com.djt.cvpp.ota:fenix-flare-orfin-model:0.1-SNAPSHOT'
+	
+    // For DTOs
+    compile 'com.fasterxml.jackson.core:jackson-core:2.9.6'
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.9.6'
+    compile 'com.fasterxml.jackson.core:jackson-annotations:2.9.6'
+    compile 'org.projectlombok:lombok:1.18.0'
+	
+    // For logging
+    compile 'ch.qos.logback:logback-core:1.2.3'
+    compile 'ch.qos.logback:logback-classic:1.2.3'
+    compile 'org.slf4j:slf4j-api:1.7.25'
+	
+	implementation 'org.hibernate:hibernate-validator'
+	//compileOnly 'org.projectlombok:lombok'
+}

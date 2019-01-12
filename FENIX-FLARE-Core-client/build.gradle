@@ -1,0 +1,29 @@
+
+plugins {
+	id 'java'
+	id 'maven-publish'
+	id 'eclipse'
+}
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+apply plugin: 'maven'
+apply plugin: 'maven-publish'
+
+jar {
+	from project(':FENIX-FLARE-Core-api').configurations.archives.allArtifacts.files.collect { zipTree it }
+}
+
+dependencies {
+	implementation project(':FENIX-FLARE-Core-api')
+	
+	//implementation 'com.djt.cvpp.ota:fenix-flare-orfin-model:0.1-SNAPSHOT'
+	
+	implementation 'org.springframework.cloud:spring-cloud-starter-openfeign'
+	implementation 'org.springframework.cloud:spring-cloud-starter-oauth2'
+	
+	compileOnly 'org.projectlombok:lombok'
+}
